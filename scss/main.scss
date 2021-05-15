@@ -7,38 +7,64 @@ $color-white-light: hsla(0, 0%, 100%, 0.75);
 $color-white-lighter: hsla(0, 0%, 100%, 0.6);
 
 body {
-
   background-color: $color-blue-dark;
   padding: 50px 20px;
 
   .card {
-    max-width: 400px;
-    margin: 0 auto;
+    background-color: $color-blue;
+    border-radius: 8px;
+    color: $color-white;
     display: flex;
     flex-direction: column;
-    background-color: $color-blue;
-    color: $color-white;
-    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    max-width: 400px;
     overflow: hidden;
 
     &-img {
-      width: 100%;
+      background-color: $color-blue-light;
       height: 250px;
+      width: 100%;
+
 
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        mix-blend-mode: multiply;
+        filter: opacity(0.8);
       }
     }
 
     &-content {
+      font-family: 'Lexend Deca', sans-serif;
       padding: 30px 25px;
       text-align: center;
 
       .content-title {
         font-size: 24px;
       }
+
+      .content-description {
+        color: $color-white-light;
+      }
+
+      .content-stats {
+        display: flex;
+        flex-direction: column;
+
+        .stat-title {
+          color: $color-white-lighter;
+        }
+
+        .stat-description {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .accent {
+      color: $color-blue-light;
     }
   }
 }
