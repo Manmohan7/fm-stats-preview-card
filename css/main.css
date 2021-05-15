@@ -1,6 +1,6 @@
 body {
   background-color: #090b1a;
-  padding: 50px 20px; }
+  padding: 70px 20px; }
   body .card {
     background-color: #1b1938;
     border-radius: 8px;
@@ -22,19 +22,32 @@ body {
         mix-blend-mode: multiply;
         filter: opacity(0.8); }
     body .card-content {
-      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Inter', sans-serif;
       padding: 30px 25px;
       text-align: center; }
       body .card-content .content-title {
-        font-size: 24px; }
+        font-size: 26px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 700; }
       body .card-content .content-description {
-        color: rgba(255, 255, 255, 0.75); }
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 15px;
+        line-height: 26px;
+        margin-top: 16px; }
       body .card-content .content-stats {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        margin-top: 20px; }
+        body .card-content .content-stats .card-stat {
+          margin-top: 28px; }
         body .card-content .content-stats .stat-title {
-          color: rgba(255, 255, 255, 0.6); }
+          color: white;
+          font-size: 26px;
+          font-weight: 700; }
         body .card-content .content-stats .stat-description {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 13px;
+          margin-top: 6px;
           text-transform: uppercase; }
     body .card .accent {
       color: #aa5cdb; }

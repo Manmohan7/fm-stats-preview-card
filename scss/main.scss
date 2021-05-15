@@ -8,7 +8,7 @@ $color-white-lighter: hsla(0, 0%, 100%, 0.6);
 
 body {
   background-color: $color-blue-dark;
-  padding: 50px 20px;
+  padding: 70px 20px;
 
   .card {
     background-color: $color-blue;
@@ -26,7 +26,6 @@ body {
       height: 250px;
       width: 100%;
 
-
       img {
         height: 100%;
         width: 100%;
@@ -37,27 +36,42 @@ body {
     }
 
     &-content {
-      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Inter', sans-serif;
       padding: 30px 25px;
       text-align: center;
 
       .content-title {
-        font-size: 24px;
+        font-size: 26px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 700;
       }
 
       .content-description {
         color: $color-white-light;
+        font-size: 15px;
+        line-height: 26px;
+        margin-top: 16px;
       }
 
       .content-stats {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
+
+        .card-stat {
+          margin-top: 28px;
+        }
 
         .stat-title {
-          color: $color-white-lighter;
+          color: $color-white;
+          font-size: 26px;
+          font-weight: 700;
         }
 
         .stat-description {
+          color: $color-white-lighter;
+          font-size: 13px;
+          margin-top: 6px;
           text-transform: uppercase;
         }
       }
