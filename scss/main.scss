@@ -10,6 +10,10 @@ body {
   background-color: $color-blue-dark;
   padding: 70px 20px;
 
+  @media (min-width: 1200px) {
+    padding: 110px 40px 0;
+  }
+
   .card {
     background-color: $color-blue;
     border-radius: 8px;
@@ -21,10 +25,20 @@ body {
     max-width: 400px;
     overflow: hidden;
 
+    @media (min-width: 1200px) {
+      flex-direction: row-reverse;
+      max-width: 80%;
+    }
+
     &-img {
       background-color: $color-blue-light;
       height: 250px;
       width: 100%;
+
+      @media (min-width: 1200px) {
+        flex: 1 1 50%;
+        height: auto;
+      }
 
       img {
         height: 100%;
@@ -40,10 +54,20 @@ body {
       padding: 30px 25px;
       text-align: center;
 
+      @media (min-width: 1200px) {
+        flex: 1 1 50%;
+        padding: 75px 110px 75px 75px;
+        text-align: left;
+      }
+
       .content-title {
         font-size: 26px;
         font-family: 'Lexend Deca', sans-serif;
         font-weight: 700;
+
+        @media(min-width: 1200px) {
+          font-size: 34px;
+        }
       }
 
       .content-description {
@@ -51,12 +75,22 @@ body {
         font-size: 15px;
         line-height: 26px;
         margin-top: 16px;
+
+        @media(min-width: 1200px) {
+          margin-top: 34px;
+        }
       }
 
       .content-stats {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
+
+        @media (min-width: 1200px) {
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 36px;
+        }
 
         .card-stat {
           margin-top: 28px;
@@ -82,6 +116,3 @@ body {
     }
   }
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
