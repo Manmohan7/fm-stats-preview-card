@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site URL here](https://manmohan7.github.io/stats-preview-card/)
+- Live Site URL: [Live site URL here](https://manmohan7.github.io/fm-stats-preview-card/)
 
 ## My process
 
